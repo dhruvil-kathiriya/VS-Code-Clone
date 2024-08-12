@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #FFF;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: #0f0f0f;
+    outline: 1px #323232 solid;
+}
+
+ul {
+    margin: 0px 60px 0px 30px;
+}
+
+li {
+    color: #9ba3b4;
+    /* margin: 4px 12px 0 12px; */
+    margin: 4px 10px;
+    font-weight: 500;
+}
+
+li:hover {
+    color: #e9eaeb;
+    cursor: pointer;
+}
+
+.navbar_p {
+    color: #e9eaeb;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.navbar_p:hover {
+    color: #e9eaeb;
+    cursor: pointer;
+}
+
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar_input {
+    background-color: #0e0e0e;
+    border: none;
+    margin: 0 0 0 10px;
+}
+
+.navbar_input::placeholder {
+    font-size: 14px;
+}
+
+.navbar_input:focus {
+    outline: none;
+    color: #c6d2dd;
+}
+
+.search_btn {
+    background-color: #0e0e0e;
+    border: none;
+}
+
+.theme-light:hover {
+    background-color: #272727;
+    border-radius: 5px;
+}
+
+.search_div:focus-within {
+    outline: 1px #0078d4 solid;
+}
+
+/*
+learning => Same division sibling property change on focus
+.search_div:active{
+    outline: 1px blue solid;
+} */
+.search_div {
+    /* border: 1px solid #323232; */
+    outline: 1px #323232 solid;
+    border-radius: 5px;
+    height: auto;
+    width: auto;
+    padding: 0 10px 0;
+    margin-right: 10px;
+}
+
+.download_btn {
+    background-color: #0078d4;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+}
+
+/* === */
+.banner,
+.language {
+    margin-top: 112px;
+    margin-bottom: 112px;
+    /* margin: 112px 0px; ??? => I'm unable to apply this */
+}
+
+.round {
+    width: auto;
+    height: auto;
+    background-color: #171717;
+    outline: 1px #323232 solid;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.round>p {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 12px;
+    color: #9ba3b4;
+    margin: 20px 0;
+}
+
+.data {
+    max-width: 320px;
+}
+
+.data>h1 {
+    font-size: 56px;
+    width: 320px;
+    font-weight: 600;
+}
+
+.data>h2 {
+    color: #e9eaeb;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    margin-top: 0;
+    line-height: 150%;
+    font-size: 30px;
+}
+
+.data>p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 160%;
+    color: #9ba3b4;
+}
+
+.data>button {
+    width: 240px;
+    line-height: 25px;
+    padding: 12px 24px;
+    margin: 10px 0;
+}
+
+/* Underlined anchor */
+.hero_link>a,
+.hero_link>p>a,
+.more_extension>p>a,
+.data>p>a {
+    text-decoration: underline;
+    color: #4DAAFC;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.hero_link>p,
+.hero_link>p>a {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #9ba3b4;
+    margin: 10px 0;
+}
+
+.hero_link>p>a {
+    font-size: 11px;
+}
+
+
+/* === LANGUAGE & extension SECTION === */
+.lang_row {
+    display: flex;
+    margin: 10px 0;
+}
+
+.one_lang {
+    height: 40px;
+    width: 250px;
+    display: flex;
+}
+
+.one_lang>img {
+    margin-right: 20px;
+}
+
+.one_lang>p {
+    line-height: 40px;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace !important;
+    color: #9ba3b4;
+}
+
+.extension_row {
+    display: flex;
+    margin: 16px;
+}
+
+.one_extension {
+    height: 100px;
+    width: 230px;
+    display: flex;
+    border: rgba(255, 255, 255, 0.07) solid 1px;
+    border-radius: 5px;
+    padding: 16px;
+    background-color: #171717;
+    margin: 0px 7px;
+}
+
+.one_extension:hover {
+    border: rgba(255, 255, 255, 0.2) solid 1px;
+    cursor: pointer;
+}
+
+.extension_1>img {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+}
+
+.extension_2>h3 {
+    font-size: 16px;
+    color: #e9eaeb;
+    margin: 4px 0;
+}
+
+.extension_2>p {
+    font-size: 14px;
+    line-height: 140%;
+    font-weight: 500;
+    color: #9ba3b4;
+}
+
+.extra_extension {
+    height: 150px;
+    opacity: 0.3;
+}
+
+.more_extension {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 160%;
+    color: #9ba3b4;
+}
+
+.gallery>div>.data>p {
+    margin: 0 0 20px 0;
+}
+
+
+/* === FEATURES === */
+.svg_wrap {
+    background-color: #272727;
+    border-radius: 6px;
+    width: 48px;
+}
+
+.svg_wrap>img {
+    height: 48px;
+    width: 48px;
+    padding: 12px;
+}
+
+.one_feature_box {
+    height: 250px;
+    width: 270px;
+    display: flex;
+    border: rgba(255, 255, 255, 0.07) solid 1px;
+    border-radius: 5px;
+    padding: 28px;
+    background-color: #171717;
+    margin: 0px 7px;
+}
+
+.one_feature>h3 {
+    color: #e9eaeb;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.one_feature>p {
+    color: #9ba3b4;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.end {
+    /* height: auto; */
+    margin: 100px auto;
+}
+
+.icons img {
+    height: 22px;
+    margin: 5px;
+    width: 22px;
+}
+
+.row2 a {
+    font-size: 12px;
+    color: #9ba3b4;
+    font-weight: 500;
+    margin-right: 15px;
+    cursor: pointer;
+}
